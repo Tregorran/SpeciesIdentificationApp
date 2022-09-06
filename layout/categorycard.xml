@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/category_Button"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/sharpcorners2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <TextView
+                android:id="@+id/category_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center|left"
+                android:elevation="100dp"
+                android:layout_marginLeft="20dp"
+                android:gravity="center|left"
+                android:text="Favourites"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:singleLine="true"
+                app:layout_constrainedWidth="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/items_TextView"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/items_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center|right"
+                android:elevation="100dp"
+                android:gravity="center"
+                android:text="10 items"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.951"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </FrameLayout>
+
+
+    <!--    <androidx.cardview.widget.CardView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_margin="5dp"-->
+<!--        app:cardCornerRadius="10dp">-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Favourites"-->
+<!--            android:textSize="30dp"-->
+<!--            app:layout_constraintEnd_toStartOf="@+id/textView"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            tools:layout_editor_absoluteY="0dp" />-->
+<!--    </androidx.cardview.widget.CardView>-->
+
+<!--        <androidx.appcompat.widget.AppCompatButton-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"/>-->
+
+
+<!--        <RelativeLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:padding="10dp">-->
+
+<!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent">-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Favourites"-->
+<!--                android:textSize="30dp"-->
+<!--                app:layout_constraintEnd_toStartOf="@+id/textView"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                tools:layout_editor_absoluteY="0dp" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/textView"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="AHHHHH"-->
+<!--                android:textSize="30dp"-->
+<!--                tools:layout_editor_absoluteX="250dp"-->
+<!--                tools:layout_editor_absoluteY="0dp" />-->
+<!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
+<!--        </RelativeLayout>-->
+
+
+
+
+
+</LinearLayout>

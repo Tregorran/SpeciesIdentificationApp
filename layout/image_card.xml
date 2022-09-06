@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/select_LinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_card_dark"
+        android:orientation="vertical">
+
+
+        <FrameLayout
+            android:id="@+id/frame_FrameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_CardView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardCornerRadius="10dp">
+
+                <ImageButton
+                    android:id="@+id/editCard_ImageButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:background="@drawable/round_card_dark"
+                    android:scaleType="fitCenter"
+                    tools:ignore="SpeakableTextPresentCheck,DuplicateClickableBoundsCheck" />
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/selectImage_Button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <ImageButton
+                android:id="@+id/delete_ImageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|left"
+                android:layout_margin="8dp"
+                android:background="?attr/selectableItemBackground"
+                android:foreground="@drawable/ic_delete"
+                android:elevation="10dp"
+                android:minWidth="40dp"
+                android:minHeight="40dp"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+            <ImageButton
+                android:id="@+id/share_ImageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|right"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="75dp"
+                android:background="?attr/selectableItemBackground"
+                android:foreground="@drawable/ic_share"
+                android:elevation="10dp"
+                android:minWidth="40dp"
+                android:minHeight="40dp"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+            <ImageButton
+                android:id="@+id/favouriteB_ImageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|right"
+                android:layout_margin="8dp"
+                android:background="?attr/selectableItemBackground"
+                android:foreground="@drawable/ic_favorite_border"
+                android:elevation="10dp"
+                android:minWidth="40dp"
+                android:minHeight="40dp"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck,DuplicateClickableBoundsCheck" />
+
+            <ImageButton
+                android:id="@+id/favourite_ImageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|right"
+                android:layout_margin="8dp"
+                android:background="?attr/selectableItemBackground"
+                android:foreground="@drawable/ic_favorite"
+                android:elevation="10dp"
+                android:minWidth="40dp"
+                android:minHeight="40dp"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/species_TextView"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:text="American_Three_toed_Woodpecker asdf asdf asdf"
+                android:textColor="@color/white"
+                app:autoSizeTextType="uniform"
+                app:layout_constrainedWidth="true" />
+
+            <TextView
+                android:id="@+id/date_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="0"
+                android:text="20/12/2022"
+                android:textAlignment="textEnd"
+                android:textColor="@color/white"
+                app:autoSizeTextType="uniform" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+<!--    <TableRow-->
+<!--        android:layout_width="fill_parent"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:layout_height="wrap_content">-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/name_TextView"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="10dp"-->
+<!--            android:layout_weight="1"-->
+<!--            android:text="Nelson_Sharp_tailed_Sparrow"-->
+<!--            android:textSize="16sp" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/date_TextView"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginRight="10dp"-->
+<!--            android:layout_weight="0"-->
+<!--            android:text="20/20/2022"-->
+<!--            android:textAlignment="viewEnd"-->
+<!--            android:textSize="16sp" />-->
+<!--    </TableRow>-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/bird_ImageView"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="385dp"-->
+<!--        android:layout_gravity="center_vertical"-->
+<!--        android:layout_marginLeft="10dp"-->
+<!--        android:layout_marginRight="10dp"-->
+<!--        android:foreground="@drawable/ic_launcher_background"-->
+<!--        android:src="@drawable/ic_delete" />-->
+
+</LinearLayout>
